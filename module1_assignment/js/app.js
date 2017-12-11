@@ -6,7 +6,7 @@ angular.module('LunchCheck',[])
 
 LunchCheckController.$inject = ['$scope'];
 function LunchCheckController($scope) {
-  // initialization of dishesText 
+  // initialization of dishesText
   $scope.dishesText = "";
 
   // A function to count dishes in a comma separated string
@@ -35,7 +35,7 @@ function LunchCheckController($scope) {
                         "border" : "2px solid",
                         "padding" : "4px"
                       };
-      if (countDishes($scope.dishesText)<=2)
+      if (countDishes($scope.dishesText)<=3)
         $scope.Message = "Enjoy!";
       else
         $scope.Message = "Too much!";
